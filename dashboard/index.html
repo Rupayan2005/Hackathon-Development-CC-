@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Neutral Mines Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Carbon Neutral Mines</h2>
+            </div>
+            <nav class="sidebar-menu">
+                <ul>
+                    <li class="active"><a href="#">Dashboard</a></li>
+                    <li><a href="#">Carbon Footprint</a></li>
+                    <li><a href="#">Sink Analysis</a></li>
+                    <li><a href="#">Carbon Neutrality</a></li>
+                    <li><a href="#">Report</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="image">
+            <header class="header">
+                <div class="user-details">
+                    <div class="user-info">
+                        <strong>Name:</strong> <input type="text" placeholder="Enter Your Name" size="33px"><br>
+                        <strong>Email:</strong> <input type="text" placeholder="Enter Your GMail" size="33px"><br>
+                        <strong>Organization:</strong> <input type="text" placeholder="Enter Your Organization Name" size="25px">
+                    </div>
+                    
+                </div>
+            </header>
+
+            <section class="dashboard">
+                <h1>DASHBOARD</h1>
+                
+
+                <div class="dashboard-cards">
+                    <div class="card">
+                        <h2>Total Emissions</h2>
+                        <p>12,345 tCO2e</p>
+                        <canvas id="emissionsChart"></canvas>
+                    </div>
+
+                    <div class="card">
+                        <h2>Energy Consumption</h2>
+                        <p>45,678 MWh</p>
+                        <canvas id="energyChart"></canvas>
+                    </div>
+
+                    <div class="card">
+                        <h2>Carbon Intensity</h2>
+                        <p>0.85 tCO2e/t</p>
+                        <canvas id="intensityChart"></canvas>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+            <section class="carbon-neutrality">
+                <h2>Carbon Neutrality</h2>
+                <div class="strategy-cards">
+                    <div class="card">
+                        <h3>Renewable Energy Integration</h3>
+                        <p>Explore opportunities to increase the share of renewable energy in the mine's energy mix, such as solar and wind.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Energy Efficiency Measures</h3>
+                        <p>Implement energy-efficient technologies and optimize processes to reduce overall energy consumption.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Carbon Capture and Storage</h3>
+                        <p>Explore the feasibility of carbon capture and storage technologies to mitigate emissions.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
