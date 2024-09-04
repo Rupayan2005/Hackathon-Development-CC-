@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.coal-mines, .new-footprint {
+    margin-bottom: 30px;
+}
+
+.mine {
+    padding: 10px;
+    background: #eef;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.visualizations {
+    margin-top: 20px;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pie-chart, .bar-chart {
+    width: 45%;
+}
+
+#pieChart, #barChart {
+    width: 100%;
+    height: auto;
+}
+
+.new-footprint {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-footprint label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.new-footprint input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.new-footprint button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.new-footprint button:hover {
+    background-color: #555;
+}
