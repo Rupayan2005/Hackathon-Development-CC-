@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coal Mine Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Coal Mine Carbon Footprint Calculator</h1>
+       
+        <div class="coal-mines">
+            <h2>Existing Coal Mines</h2>
+            <div class="mine">Alpha Mine: <span id="alphaFootprint">500,000</span> tons CO2e</div>
+            <div class="mine">Beta Mine: <span id="betaFootprint">750,000</span> tons CO2e</div>
+            <div class="mine">Gamma Mine: <span id="gammaFootprint">600,000</span> tons CO2e</div>
+        </div>
+
+        <div class="visualizations">
+            <h2>Carbon Footprint Visualizations</h2>
+            <div class="charts">
+                <div class="pie-chart">
+                    <canvas id="pieChart"></canvas>
+                </div>
+                <div class="bar-chart">
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="new-footprint">
+            <h2>Calculate New Carbon Footprint</h2>
+            <label for="coalProduction">Coal Production (tons)</label>
+            <input type="number" id="coalProduction" placeholder="Enter coal production in tons">
+            <label for="electricityUsage">Electricity Usage (kWh)</label>
+            <input type="number" id="electricityUsage" placeholder="Enter electricity usage in kWh">
+            <label for="fuelConsumption">Fuel Consumption (liters)</label>
+            <input type="number" id="fuelConsumption" placeholder="Enter fuel consumption in liters">
+            <button id="calculateBtn">Calculate Carbon Footprint</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
